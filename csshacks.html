@@ -1,0 +1,234 @@
+
+<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>goatleg | CSS Hacks</title>
+	<meta name="description" content="LEGO part variations">
+	<meta name="copyright" content="Copyright (c) 2015 Don Rogerson">
+	<meta name="author" content="Don Rogerson">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css" media="screen, print, projection">
+	body,
+	html {
+		margin:0;
+		padding:0;
+		color:#000;
+		background:#fff;
+	}
+	#wrap {
+		width:920px;
+		margin:0 auto;
+		background:#fff;
+	}
+	#header {
+    	padding:5px 10px;
+		background:#fff;
+		text-align:center;
+	}
+	h1 {
+	    margin:0;
+    }
+	#nav {
+		padding:5px 10px;
+		background:#ccc;
+	}
+	#nav ul {
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#nav li {
+		display:inline;
+		margin:0;
+		padding:0;
+	}
+	#col1 {
+		float:left;
+		width:22%;
+		padding:10px;
+		background:#fff;
+		border-right-style:solid;
+		border-right-width:1px;
+	}
+	#col2 {
+		float:left;
+		width:66%;
+		padding:10px;
+		background:#fff;
+		border-right-style:solid;
+		border-right-width:1px;
+	}
+	#col3 {
+		float:left;
+		width:22%;
+		padding:10px;
+		background:#fff;
+		border-right-style:solid;
+		border-right-width:1px;
+	}
+	#col4 {
+		float:left;
+		width:22%;
+		padding:10px;
+		background:#fff;
+
+	}
+
+
+	h2 {
+		margin:0 0 1em;
+	}
+	#sidebar {
+		float:right;
+		width:440px;
+		padding:10px;
+		background:#fff;
+	}
+	#footer {
+		clear:both;
+		padding:5px 10px;
+		background:#fff;
+	}
+	#footer p {
+		margin:0;
+    }
+	* html #footer {
+		height:1px;
+	}
+	a:link {
+	color: #660000;
+    text-decoration: none;
+}
+
+a:visited {
+	color: #660000;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #B20000;
+    text-decoration: underline;
+}
+
+a:active {
+	color: #B20000;
+    text-decoration: underline;
+}	</style>
+
+</head>
+<body>
+<div id="wrap">
+
+    <div id="header"><img src="images/goatleg.png" height="50" vspace="25"></div>
+
+    <div id="nav"><a href="index.html">&lt;--</a> CSS</div>
+	<div id="col1">
+<b>CSS</b><p/>
+Cascading Style Sheets (or CSS for short) are a common way to format web pages. While Bricklink strips out many of the tags used in CSS, it is possible to link to CSS files and use them in a limited way to make your Bricklink-hosted pages more attractive.
+<p/>
+For more information on CSS, try this <a href="http://www.w3schools.com/css/">CSS Tutorial</a>. There are numerous other CSS resources on the web. Bear in mind that many of the features will not work on Bricklink, so some trial and error may be necessary to get the results you want.
+
+	</div>
+   <div id="col2">
+   <hr/>
+
+   <b>Include Font Awesome Icons in your Pages</b><p/>
+   Bricklink makes use of a free icon hosting service called <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> that allows you to insert icons in your pages. Here are some examples:
+   <p/>
+   <em>Insert icons for emphasis</em>
+   <p/>
+   <i class="fa fa-warning"></i>  Please be aware your home country may impose import duties on your purchase.
+   <p/>
+   <em>Use icons in lists</em>
+
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-hand-o-right"></i>Great Selection</li>
+  <li><i class="fa-li fa fa-hand-o-right"></i>Quick Service</li>
+  <li><i class="fa-li fa fa-rocket"></i>Rocketships</li>
+
+</ul>
+<p/>
+<em>Use icons as links</em>
+<p/>
+<a href="#"><i class="fa fa-home"></i> Home</a>
+
+   <p/>
+<b>Instructions</b>
+<p/>
+
+1. The first step is to insert a link to the Font Awesome stylesheet into the page where you want to use the icons. Select the link text below and copy it to your clipboard.
+<p/>
+<textarea cols="60" rows="2">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</textarea>
+<p/>
+2. Next, go to your Bricklink page where you want to use the icon and paste the link text at the top of the text entry box. For example, here is the <a href="http://www.bricklink.com/pref_terms.asp">page to enter your store terms</a>:
+<p/>
+<img src="images/screen1.jpg" width="95%">
+<p/>
+3. Next, visit the <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome website</a> and choose an icon to use. Make note of the name of the icon.
+<p/>
+4. Insert the code below where you want the icon to appear <em>inserting the name of the icon where it says ICON_NAME</em>.<p/>
+<textarea cols="60" rows="2">
+<div class="fa fa-ICON_NAME"></div>
+</textarea>
+<p/>
+For this example we'll use the icon called <em>warning</em>. Paste the text where you want the icon to appear:
+<p/>
+<img src="images/screen2.jpg" width="95%">
+<p/>
+5. Click the <b>Submit Changes</b> button and view your page for any format issues.
+<p/>
+<b>Using icons as list bullets</b>
+To create an unordered list using icons for bullets, such as the one below, copy the code and alter it with the icon names and list contents:
+
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-hand-o-right"></i>Great Selection</li>
+  <li><i class="fa-li fa fa-hand-o-right"></i>Quick Service</li>
+  <li><i class="fa-li fa fa-rocket"></i>Rocketships</li>
+
+</ul>
+<p/>
+<textarea cols="60" rows="8">
+<ul class="fa-ul">
+  <li><div class="fa-li fa fa-hand-o-right"></div>Great Selection</li>
+  <li><div class="fa-li fa fa-hand-o-right"></div>Quick Service</li>
+  <li><div class="fa-li fa fa-rocket"></div>Rocketships</li>
+
+</ul>
+</textarea>
+<p/>
+<b>Where you can use CSS</b>
+<p/>
+There are several places where you can use CSS on your Bricklink-hosted pages:
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-home"></i>On your splash page</li>
+  <li><i class="fa-li fa fa-legal"></i>On your terms page</li>
+  <li><i class="fa-li fa fa-user"></i>On your About Me page</li>
+
+</ul>
+<p/>
+Icons can be resized, stacked and formatted using common HTML.<br/>You can even make them spin.<p/>
+Please do not make them spin.<p/>For more examples, visit <a href="http://fortawesome.github.io/Font-Awesome/examples/">Font Awesome</a>.
+<p/>
+<i class="fa fa-warning"></i>  <b>Note:</b> The Font Awesome examples direct you to use the <b>i</b> or <b>span</b> tags to include icons. <em>These will be stripped by Bricklink!</em> Instead, substitute the <b>div</b> tag.
+
+<hr/>
+
+
+
+</div>
+
+
+
+    <div id="footer"><hr/><br/><a href="index.html">goatleg</a> is maintained by <a href="http://www.bricklink.com/store.asp?p=62Bricks">62 Bricks</a><br/>
+    Not affiliated with or endorsed by Bricklink<br/>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
